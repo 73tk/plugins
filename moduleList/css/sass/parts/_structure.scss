@@ -1,0 +1,144 @@
+#wrap {
+  width : 1000px;
+  margin : 0 auto;
+  padding : 20px 0;
+}
+
+.mod-hdg-lv1 {
+  font-size : 18px;
+  font-weight : bold;
+  padding : 10px 15px;
+  border-top : 1px solid #eaeaea;
+  border-top-left-radius : 6px;
+  border-top-right-radius : 6px;
+  background : -webkit-linear-gradient( #efefef,#dfdfdf);
+  background :         linear-gradient( #efefef,#dfdfdf);
+  background-color : #efefef;
+  text-shadow : 1px 1px 0 rgba(255,255,255,0.7);
+}
+
+
+.mod-hdg-lv2 {
+  font-size : 14px;
+  font-weight : bold;
+  overflow : hidden;
+  margin : 80px 0 30px;
+  padding : 6px 15px;
+  color : #fff;
+  border-radius : 3px;
+  background-color : #505050;
+  text-shadow : -1px -1px 0 rgba(0,0,0,0.5);
+  > span {
+    font-weight : normal;
+    display : block;
+    float : right;
+    margin : -6px -15px -6px 0;
+    padding : 6px 15px;
+    background : #aaa;
+    text-shadow : none;
+  }
+}
+
+.mod-hdg-lv1 + .mod-hdg-lv2 {
+  margin-top : 0;
+  border-top-left-radius : 0;
+  border-top-right-radius : 0;
+}
+
+.mod-button-show {
+  font-family : Menlo, Monaco, 'Bitstream Vera Sans Mono', 'Lucida Console', Consolas, Courier, monospace;
+  position : relative;
+  display : inline-block;
+  margin : 0;
+  padding : 5px 40px 5px 10px;
+  text-align : left;
+  color : #666;
+  border : none;
+  border-radius : 3px;
+  background-color : #eaeaea;
+  .toggle-status {
+    position : absolute;
+    top : 50%;
+    right : 10px;
+    display : block;
+    overflow : hidden;
+    width : 20px;
+    height : 20px;
+    margin-top : -10px;
+    cursor : pointer;
+    white-space : nowrap;
+    text-indent : 100%;
+    border-radius : 3px;
+    background-color : #fff;
+    -webkit-box-shadow : 0 0 2px #bbb;
+            box-shadow : 0 0 2px #bbb;
+    &:before {
+      position : absolute;
+      top : 50%;
+      right : 3px;
+      display : block;
+      width : 14px;
+      height : 2px;
+      margin-top : -1px;
+      content : '';
+      background-color : #505050;
+    }
+    &:after {
+      position : absolute;
+      top : 50%;
+      right : 3px;
+      display : block;
+      width : 14px;
+      height : 2px;
+      margin-top : -1px;
+      content : '';
+      transform : rotate(90deg);
+      background-color : #505050;
+    }
+  }
+  &.open {
+    border-bottom-right-radius : 0;
+    border-bottom-left-radius : 0;
+    .toggle-status:after {
+      transform : rotate(0deg);
+    }
+  }
+}
+
+.mod-code {
+  margin : 0 0 10px;
+  textarea {
+    font-family : Menlo, Monaco, 'Bitstream Vera Sans Mono', 'Lucida Console', Consolas, Courier, monospace;
+    font-size : 12px;
+    line-height : 1.6;
+    -webkit-box-sizing : border-box;
+       -moz-box-sizing : border-box;
+            box-sizing : border-box;
+    width : 100%;
+    height : 14em;
+    padding : 10px;
+    resize : vertical;
+    color : #6fdfff;
+    border : none;
+    border-radius : 3px;
+    border-top-left-radius : 0;
+    background-color : #505050;
+  }
+}
+
+.mod-comment {
+  font-size : 13px;
+  padding : 7px 15px;
+  border : 1px solid #a9a9a9;
+  border-radius : 3px;
+  background-color : #f1f1f1;
+  > li {
+    margin-left : 1em;
+    list-style : disc;
+  }
+}
+
+.hdg-lv1-01 {
+  font-size : 30px;
+  margin : 0 0 0.8em;
+}

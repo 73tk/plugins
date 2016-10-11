@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>demo | smoothScroll.js</title>
+<style>
+section {
+  margin-top: 500px;
+  padding: 300px 0;
+background-color: #ddd;
+}
+</style>
+</head>
+<body>
+<p><a href="#">only '#'</a></p>
+<p><a href="#anc-01">anc-01</a></p>
+<p><a href="#anc-02">anc-02</a></p>
+<p><a href="#anc-03">anc-03</a></p>
+<p><a class="js-no-scroll" href="#">.js-no-scroll</a></p>
+<section id="anc-01">
+<p>content1</p>
+</section>
+<section id="anc-02">
+<p>content2</p>
+</section>
+<section id="anc-03">
+<p>content3</p>
+</section>
+</body>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="smoothScroll.js"></script>
+</html>
