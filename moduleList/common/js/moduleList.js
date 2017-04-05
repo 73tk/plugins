@@ -1,8 +1,9 @@
 /*!*
  * moduleList.js
  * Version 1.0.0
- * Copyright (C) 73tk
+ * Copyright (C) 2017 73tk
  * Author 73tk
+ * license MIT License
  */
 
 (function($) {

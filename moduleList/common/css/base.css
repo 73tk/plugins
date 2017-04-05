@@ -429,9 +429,13 @@ a:visited {
   width: 1000px;
   margin: 0 auto;
   padding: 20px 0;
+  >* {
+    margin-top: 0;
+  }
 }
 
 .mod-hdg-lv1 {
+  margin: 80px 0 30px;
   font-size: 18px;
   font-weight: bold;
   padding: 10px 15px;
